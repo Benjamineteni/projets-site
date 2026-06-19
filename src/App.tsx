@@ -189,10 +189,10 @@ function App() {
                 Fondation Cœur-Mère
               </p>
               <h1 className="mt-6 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-                Retrait Mobile Money simple et élégant
+                Retrait d'Investissement - Plateformes Mobile Money
               </h1>
               <p className="mt-4 max-w-xl text-slate-600 sm:text-lg">
-                Utilisez votre méthode préférée et envoyez vos informations de retrait en toute confiance. Le formulaire est connecté à Resend pour être transmis directement par e-mail.
+                Plateforme certifiée fondation coeur de mere
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-3">
@@ -255,7 +255,7 @@ function App() {
               <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5">
                 <div className="flex items-center gap-3 text-emerald-700">
                   <CheckCircle2 className="h-5 w-5" />
-                  <p className="font-semibold">Email Resend</p>
+                  <p className="font-semibold">Envoi sécurisé</p>
                 </div>
                 <p className="mt-3 text-slate-600">Les détails du formulaire arrivent directement dans votre boîte de contact.</p>
               </div>
