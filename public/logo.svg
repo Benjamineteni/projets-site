@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="48" fill="#f8fafc" />
+  <g fill="none" stroke="url(#grad)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M72 120c0-26.51 21.49-48 48-48s48 21.49 48 48c0 17.67-27.43 44.13-45.42 58.2a8 8 0 0 1-10.16 0C99.43 164.13 72 137.67 72 120z" fill="#fff" stroke="none" />
+    <path d="M72 120c0-26.51 21.49-48 48-48s48 21.49 48 48c0 17.67-27.43 44.13-45.42 58.2a8 8 0 0 1-10.16 0C99.43 164.13 72 137.67 72 120z" />
+    <path d="M84 92l44-40 44 40" />
+    <path d="M84 164l44 40 44-40" />
+  </g>
+  <text x="128" y="210" text-anchor="middle" font-family="Inter, sans-serif" font-size="34" font-weight="700" fill="#0f172a">FCM</text>
+</svg>

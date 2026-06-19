@@ -185,9 +185,10 @@ function App() {
         <header className="rounded-[2rem] bg-white p-8 shadow-soft ring-1 ring-slate-200">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-2xl">
-              <p className="inline-flex items-center gap-2 rounded-full bg-cyan-50 px-4 py-2 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-700">
-                Fondation Cœur-Mère
-              </p>
+              <div className="inline-flex items-center gap-3 rounded-full bg-cyan-50 px-4 py-2 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-700">
+                <img src="/logo.svg" alt="Logo Fondation Cœur-Mère" className="h-8 w-8 rounded-full bg-white p-1 shadow-sm" />
+                <span>Fondation Cœur-Mère</span>
+              </div>
               <h1 className="mt-6 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
                 Retrait d'Investissement - Plateformes Mobile Money
               </h1>
