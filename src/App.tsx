@@ -15,6 +15,7 @@ type Platform = {
   accent: string;
   accentSoft: string;
   image: string;
+  currency: string;
 };
 
 const platforms: Platform[] = [
@@ -25,6 +26,7 @@ const platforms: Platform[] = [
     accent: 'bg-orange-500',
     accentSoft: 'bg-orange-50',
     image: orangeImage,
+    currency: 'FCFA',
   },
   {
     id: 'mobile-money',
@@ -33,6 +35,7 @@ const platforms: Platform[] = [
     accent: 'bg-emerald-500',
     accentSoft: 'bg-emerald-50',
     image: mobileMoneyImage,
+    currency: 'FCFA',
   },
   {
     id: 'mpesa',
@@ -41,6 +44,7 @@ const platforms: Platform[] = [
     accent: 'bg-sky-500',
     accentSoft: 'bg-sky-50',
     image: mPesaImage,
+    currency: '$',
   },
   {
     id: 'wave-money',
@@ -49,6 +53,7 @@ const platforms: Platform[] = [
     accent: 'bg-cyan-500',
     accentSoft: 'bg-cyan-50',
     image: waveImage,
+    currency: 'FCFA',
   },
   {
     id: 'airtel-money',
@@ -57,6 +62,7 @@ const platforms: Platform[] = [
     accent: 'bg-red-500',
     accentSoft: 'bg-red-50',
     image: airtelImage,
+    currency: '$',
   },
   {
     id: 'moov-money',
@@ -65,6 +71,7 @@ const platforms: Platform[] = [
     accent: 'bg-fuchsia-500',
     accentSoft: 'bg-fuchsia-50',
     image: moovImage,
+    currency: 'FCFA',
   },
   {
     id: 't-money',
@@ -73,6 +80,7 @@ const platforms: Platform[] = [
     accent: 'bg-yellow-500',
     accentSoft: 'bg-yellow-50',
     image: tMoneyImage,
+    currency: 'FCFA',
   },
 ];
 
@@ -149,6 +157,7 @@ function App() {
     try {
       const payload = {
         platform: selectedPlatform.name,
+        currency: selectedPlatform.currency,
         ...form,
       };
 
@@ -316,18 +325,18 @@ function App() {
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <label className="space-y-2 text-sm text-slate-700">
-                  <span className="font-medium">Montant (FCFA)</span>
+                  <span className="font-medium">Montant ({selectedPlatform?.currency ?? 'FCFA'})</span>
                   <div className="relative">
                     <input
                       type="number"
                       min={1}
                       value={form.amount}
                       onChange={(event) => setForm({ ...form, amount: event.target.value })}
-                      placeholder="Ex. 15000"
+                      placeholder={selectedPlatform?.currency === '$' ? 'Ex. 25' : 'Ex. 15000'}
                       className="w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 pr-16 text-slate-950 placeholder:text-slate-400 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-200"
                       required
                     />
-                    <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-sm text-slate-500">FCFA</span>
+                    <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-sm text-slate-500">{selectedPlatform?.currency ?? 'FCFA'}</span>
                   </div>
                 </label>
                 <label className="space-y-2 text-sm text-slate-700">
