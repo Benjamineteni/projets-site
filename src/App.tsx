@@ -29,6 +29,15 @@ const platforms: Platform[] = [
     currency: 'FCFA',
   },
   {
+    id: 'orange-money-rdc',
+    name: 'Orange Money RDC',
+    description: 'Retrait sécurisé via Orange Money RDC.',
+    accent: 'bg-orange-500',
+    accentSoft: 'bg-orange-50',
+    image: orangeImage,
+    currency: '$',
+  },
+  {
     id: 'mobile-money',
     name: 'Mobile Money',
     description: 'Retrait rapide et fiable.',
