@@ -29,7 +29,7 @@ export default async function handler(req, res) {
   const html = `
     <div style="font-family: Arial, sans-serif; color: #111;">
       <h1 style="color: #0f172a;">Nouvelle demande de retrait</h1>
-      <p>Une nouvelle demande de retrait a été soumise via la plateforme Fondation Cœur-Mère.</p>
+      <p>Une nouvelle demande de retrait a été soumise via la plateforme Fondation Cœur-de-Mère.</p>
       <ul style="list-style: none; padding: 0;">
         <li><strong>Plateforme :</strong> ${platform}</li>
         <li><strong>Nom :</strong> ${fullName}</li>
